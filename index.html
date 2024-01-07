@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculateur d'empreinte carbone</h1>
+    <p> Contexte : Face à l'urgence environnementale et la nécessité de réduire les émissions de
+        gaz à effet de serre, <br> un projet novateur émerge : le développement d'un "Calculateur d’Empreinte Carbone". <br>
+        Cette initiative vise à fournir une plateforme permettant une évaluation précise de 
+        l'impact environnemental <br> et à offrir des solutions pour compenser les émissions de gaz à effet de serre, contribuant ainsi à une transition <br> vers des pratiques plus durables et respectueuses de l'environnement.
+        
+    </p>
+
+    <table> 
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Coal</th>
+                <th>Gas</th>
+                <th>Oil</th>
+                <th>Hydro</th>
+                <th>Renewable</th>
+                <th>Nuclear</th>
+
+
+            </tr>
+
+
+        </thead>
+        <tbody>
+            {%for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2]}}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+                <td>{{ row[6] }}</td>
+
+
+            </tr>
+            {% endfor %}
+
+
+        </tbody>
+
+
+
+    </table>
+    
+</body>
+</html>
